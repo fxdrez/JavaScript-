@@ -18,7 +18,7 @@ rock.addEventListener("click", () => {
     result = "Win";
   }
   // console.log(`Computer Choose: ${computerMove}\nYou ${result}`); 
-  alert(`Computer Choose: ${computerMove}\nYou ${result}`);
+  alert(`You Choose Rock \nComputer Choose: ${computerMove}\nYou ${result}`);
 });
 
 const paper = document.getElementById("paper");
@@ -41,7 +41,7 @@ paper.addEventListener("click", () => {
     result = "Loose";
   }
   // console.log(`Computer Choose: ${computerMove}\nYou ${result}`);
-  alert(`Computer Choose: ${computerMove}\nYou ${result}`);
+  alert(`You Choose Paper \nComputer Choose: ${computerMove}\nYou ${result}`);
 });
 
 const scissor = document.getElementById("scissor");
@@ -64,5 +64,5 @@ scissor.addEventListener("click", () => {
     result = "Draw";
   }
   // console.log(`Computer Choose: ${computerMove}\nYou ${result}`); 
-  alert(`Computer Choose: ${computerMove}\nYou ${result}`);
+  alert(`You Choose Scissor \nComputer Choose: ${computerMove}\nYou ${result}`);
 });

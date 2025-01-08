@@ -4,12 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock paper Scissor</title>
+  <link rel="stylesheet" href="if-bool.css">
 </head>
 <body>
-  <h1>Game: Rock Paper Scissor</h1>
-  <button id="rock">Rock</button>
-  <button id="paper">Paper</button>
-  <button id="scissor">Scissor</button>
+  <div class="image">
+  <img src="https://i.ytimg.com/vi/awdJ0OGjqsc/maxresdefault.jpg" usemap="#rps-map" alt="Rock Paper Scissors">
+
+    <map name="rps-map">
+        <area shape="circle" coords="210,409,210" alt="Rock" href="#rock" id="rock">
+        <area shape="circle" coords="640,409,210" alt="Paper" href="#paper" id="paper">
+        <area shape="circle" coords="1075,409,210" alt="Scissors" href="#scissors" id="scissor">
+    </map>
+  </div>
   <script src="if-boolen.js"></script>
 </body>
 </html>
