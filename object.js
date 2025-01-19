@@ -49,6 +49,21 @@
 // }
 // CalcTaxOfProduct(10000, 8);
 
+//Bracket notation
+// it is the way to access the objects value
+// it lets us to use properties that cant be access by the dot notation
+
+//Example
+// const product = {
+//   name : "shoes",
+//   price : 25000
+// };
+// console.log(product);
+// console.log(product.name); //dot notation
+// console.log(product['name']); //bracket notation
+// console.log(product.price);
+// console.log(product['price']);
+
 function pickcomputerMovement() {
   let computerMove = "";
 
