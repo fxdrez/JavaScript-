@@ -22,38 +22,12 @@
 // delete product.price;
 // console.log(product)
 
-// function calculateTax() {
-//   console.log(1000 * 0.1);
-// }
-// calculateTax();
-
-// function calculateVat(price) {
-//   return console.log(price * 0.18);
-// }
-// calculateVat(5000);
-// calculateVat(10000);
-
-// function print(a, b) {
-//   console.log(
-//     `The a is ${a} and b is ${b} and their sum is ${
-//       a + b
-//     } and the difference is ${a - b}`
-//   );
-// }
-// print(12, 6);
-// print(18, 20);
-
-// function CalcTaxOfProduct(cost, taxPer) {
-//   console.log(`Tax Amount: ${cost * (taxPer * 0.01)}`);
-//   console.log(`Total: ${cost + cost * (taxPer * 0.01)}`);
-// }
-// CalcTaxOfProduct(10000, 8);
 
 //Bracket notation
 // it is the way to access the objects value
 // it lets us to use properties that cant be access by the dot notation
 
-//Example
+// // Example
 // const product = {
 //   name : "shoes",
 //   price : 25000
@@ -63,6 +37,76 @@
 // console.log(product['name']); //bracket notation
 // console.log(product.price);
 // console.log(product['price']);
+
+
+
+// // in some cases this dot notation fails such as
+// const product1 = {
+//   name : 'apple' ,
+//   price : 300 ,
+//   'devilery-time':'5 days'
+// };
+// console.log(product1['devilery-time']); //worked
+// console.log(product1.devilery-time); //doesn't work
+
+// so the bracket notation is used
+//mostly dot is used as it is easy to use
+
+// //Nested Object
+// // Object within an object
+
+// product5 = {
+//   product : 'Chair',
+//   price : 450 ,
+//   rating : {
+//     rate : 5,
+//     count : 33
+//   },
+//   cart_in: function cart(){  //method- function inside the object
+//     console.log('product is added to cart');
+
+//     // Buit in object
+//     console.log(typeof console); //object
+//     console.log(typeof console.log); //fun
+//     console.log(typeof Math); //obj
+//     console.log(typeof Math.random); //fun
+//   }
+// }
+// // Can be accesssed by using multiple dot / bracket
+// console.log(product5.rating.count);
+// console.log(product5['rating']['rate']);
+// product5.cart_in();
+
+// Built in Object
+// JSON
+// localStorage
+
+// JSON
+// JavaScript Object Notation
+//   - a syntax
+//   - similar to JavaScript object
+// doesn't support single quote
+// less feature doesnt support function
+// json is more universal
+// we use json -when we send data between computer 
+//             -we store data
+
+// Built in JSON object
+
+// json.syringify is used to convert JS object to JSON object
+// console.log(JSON.stringify(product5))
+// console.log(typeof JSON.stringify(product5))
+
+// json.parse is used to convert JSON object to JS object 
+// console.log(JSON.parse(JSON.stringify(product5)));
+// console.log(typeof JSON.parse(JSON.stringify(product5)));
+
+// localStorage
+// save the value that cant be lost by refreshing the page
+// console.log(localStorage.getItem('Points'));
+// localStorage.setItem('Points',5);
+
+// Done by using object 
 
 function pickcomputerMovement() {
   let computerMove = "";
@@ -79,15 +123,15 @@ function pickcomputerMovement() {
   return computerMove;
 }
 
-const score = {
-  wins: 0,
-  looses: 0,
-  ties: 0,
-};
+const score = JSON.parse(localStorage.getItem('score'));
+
+console.log();
 
 //Game Operation
 function playGame(playerMove) {
   const computerMove = pickcomputerMovement();
+
+
   let result = "";
 
   if (playerMove === "rock") {
@@ -123,10 +167,14 @@ function playGame(playerMove) {
   } else if (result === "Draw") {
     score.ties += 1;
   }
-  console.log('i am error free')
+
+  
   alert(
     `You Choose: ${playerMove} \nComputer Choose: ${computerMove}\nYou ${result} \n\nWins: ${score.wins} \nLooses: ${score.looses} \nDraws: ${score.ties}`
   );
+
+  localStorage.setItem('score',JSON.stringify(score));
+
 }
 
 //Button function to click for selecting move of their choice / Player Move

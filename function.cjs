@@ -5,6 +5,33 @@
 //   console.log(2+2);
 // }
 
+// function calculateTax() {
+//   console.log(1000 * 0.1);
+// }
+// calculateTax();
+
+// function calculateVat(price) {
+//   return console.log(price * 0.18);
+// }
+// calculateVat(5000);
+// calculateVat(10000);
+
+// function print(a, b) {
+//   console.log(
+//     `The a is ${a} and b is ${b} and their sum is ${
+//       a + b
+//     } and the difference is ${a - b}`
+//   );
+// }
+// print(12, 6);
+// print(18, 20);
+
+// function CalcTaxOfProduct(cost, taxPer) {
+//   console.log(`Tax Amount: ${cost * (taxPer * 0.01)}`);
+//   console.log(`Total: ${cost + cost * (taxPer * 0.01)}`);
+// }
+// CalcTaxOfProduct(10000, 8);
+
 // fun()
 // fun();
 
