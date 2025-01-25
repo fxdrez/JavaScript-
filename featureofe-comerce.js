@@ -10,7 +10,7 @@ function claculateProcess() {
   if (cost >= 100) {
     cost = cost;
   } else if (cost < 100) {
-    cost += 10;
+    cost += 20;
   }
   document.querySelector(".js-result").innerHTML = `$${cost}`;
 }
