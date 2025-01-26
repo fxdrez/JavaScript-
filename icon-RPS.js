@@ -76,7 +76,8 @@ function playGame(playerMove) {
     score.ties += 1;
   }
   localStorage.setItem("score", JSON.stringify(score));
-  document.querySelector(".js-move").innerHTML = `You Choose: ${playerMove} -- Computer Choose: ${computerMove}`;
+  document.querySelector(".js-move").innerHTML = `You <img src="rpc-emoji/${playerMove}-emoji.png" class="move-result-css"> <img
+      src="rpc-emoji/${computerMove}-emoji.png" class="move-result-css">Computer`;
   document.querySelector(".js-result").innerHTML = `You ${result}`;
 }
 

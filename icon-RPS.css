@@ -2,6 +2,7 @@ body{
   background-color: rgb(41, 40, 40);
   color: white;
   font-family: Arial;
+  margin: 20px;
 }
 
 .title{
@@ -9,16 +10,47 @@ body{
   font-size: 30px;
 }
 
-.btn-move{
-  background-color: black;
-  height: 150px;
-  width: 150px;
-  padding: 20px;
-  box-sizing: border-box;
-  border-radius: 50%;
+.btn-move-img{
+  height: 50px;
 }
 
 .btn{
+  background-color: transparent;
+  border: 3px solid white;
   border-radius: 50%;
+  padding: 40px;
+  margin: 20px;  
   cursor: pointer;
+}
+
+.result-css{
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.move-result-css{
+  margin-top: 20px;
+  height: 50px;
+  width: 50px;
+}
+
+.scores{
+  margin-top: 60px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.reset-css{
+  border: none;
+  background-color: rgb(87, 8, 9);
+  color: white;
+  font-size: 15px;
+  padding: 12px 10px;
+  cursor: pointer;
+}
+
+.reset-message-css{
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 40px;
 }
