@@ -1,0 +1,38 @@
+body{
+  font-family: Arial;;
+}
+.subscribebtn{
+  border: none;
+  background-color: black;
+  color: aliceblue;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight:bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.is-subscribed{
+  background-color: rgb(226, 220, 220);
+  color: black;
+}
+
+.input-box{
+  padding-right: 40px;
+  padding-left: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.calcbutn{
+  border: none;
+  background-color: green;
+  color: white;
+  font-size: 15px;
+  padding: 12px 10px;
+}
