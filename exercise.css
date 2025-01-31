@@ -1,0 +1,21 @@
+body{
+  font-family: Arial;;
+}
+.button-css{
+  border: none;
+  background-color: rgb(216, 212, 212);
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight:bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.is-toggle{
+  color: rgb(226, 220, 220);
+  background-color: black;
+}
